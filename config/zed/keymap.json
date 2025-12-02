@@ -1,0 +1,15 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "f12": "editor::GoToDefinition",
+      "cmd-f12": "editor::GoToDefinitionSplit"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-cmd-click": "editor::GoToDefinition"
+    }
+  }
+]

@@ -1,14 +1,22 @@
 ```bash
 .
+├── .claude
+│   └── settings.local.json
+├── .github
+│   └── workflows
+│       └── generate-readme.yml
 ├── README.md
-├── git
-│   ├── .gitconfig
-│   ├── README.md
-│   └── bin
-│       └── git-cai
-└── zed
-    ├── pyrightconfig.json
-    └── settings.json
+├── bin
+│   └── git-cai
+├── config
+│   └── zed
+│       ├── conversations
+│       ├── keymap.json
+│       ├── pyrightconfig.json
+│       └── settings.json
+├── gitconfig
+├── install.sh
+└── zshrc
 
-4 directories, 6 files
+8 directories, 10 files
 ```

@@ -1,6 +1,6 @@
 [user]
-	email = "test@example.com"
-	name = "test"
+	email = "so.dev000@gmail.com"
+	name = "so-dev000"
 
 [push]
 	default = current
@@ -19,6 +19,7 @@
     light = false
     side-by-side = true
     line-numbers = true
+	pager = less -RFX
 
 [alias]
     tree = log --graph --all --decorate --oneline

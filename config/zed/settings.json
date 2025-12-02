@@ -1,4 +1,16 @@
 {
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5"
+    },
+    "model_parameters": []
+  },
+  "git_panel": {
+    "sort_by_path": false
+  },
   "disable_ai": false,
   "base_keymap": "VSCode",
   "autosave": "on_focus_change",
@@ -23,7 +35,16 @@
   "minimap": {
     "show": "never"
   },
-  "icon_theme": "VSCode Icons (Dark)",
+  "icon_theme": "VSCode Icons for Zed (Dark)",
+  "preview_tabs": {
+    "enabled": false
+  },
+  "double_click_in_multibuffer": "open",
+
+  // Diagnostics
+  "diagnostics": {
+    "include_warnings": true
+  },
 
   // Inlay Hints
   "inlay_hints": {
@@ -54,23 +75,19 @@
       "initialization_options": {
         "maxTsServerMemory": 4096,
         "preferences": {
-          // Inlay Hints: すべてオフ
           "includeInlayParameterNameHints": "none",
           "includeInlayPropertyDeclarationTypeHints": false,
           "includeInlayFunctionParameterTypeHints": false,
 
-          // 基本補完: 有効（便利なので）
           "disableSuggestions": false,
           "includeCompletionsForModuleExports": true,
           "allowIncompleteCompletions": true,
 
-          // 高度な補完: オフ（軽量化）
           "includeCompletionsWithSnippetText": false,
           "includeAutomaticOptionalChainCompletions": false,
           "includeCompletionsWithClassMemberSnippets": false,
           "completeFunctionCalls": false,
 
-          // Import補完: 必要に応じて
           "includeCompletionsForImportStatements": true
         }
       }
@@ -105,4 +122,3 @@
     }
   }
 }
-

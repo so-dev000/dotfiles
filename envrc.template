@@ -1,0 +1,2 @@
+# LaTeX settings
+export LATEXMKRC=$HOME/.latexmkrc

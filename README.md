@@ -1,16 +1,11 @@
 ```
 .
 ├── README.md
-├── bin
-│   └── git-cai
-├── config
-│   └── zed
-│       ├── keymap.json
-│       ├── pyrightconfig.json
-│       └── settings.json
+├── envrc.template
 ├── gitconfig
 ├── install.sh
+├── latexmkrc.template
 └── zshrc
 
-4 directories, 8 files
+1 directory, 6 files
 ```

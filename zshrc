@@ -5,21 +5,14 @@ export PATH="$HOME/.local/bin:$PATH"
 export SUPPRESS_CRASH_REPORT=1
 
 # Git prompt
-if [ -f ~/.zsh/git-prompt.sh ]; then
-    source ~/.zsh/git-prompt.sh
-    GIT_PS1_SHOWDIRTYSTATE=true
-    GIT_PS1_SHOWUNTRACKEDFILES=true
-    GIT_PS1_SHOWSTASHSTATE=true
-    GIT_PS1_SHOWUPSTREAM=auto
-fi
+source ~/.zsh/git-prompt.sh 2>/dev/null
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
 
-# Set prompt with or without git
-if type __git_ps1 &>/dev/null; then
-    setopt PROMPT_SUBST
-    PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f$ '
-else
-    PS1='%F{green}%n@%m%f: %F{cyan}%~%f$ '
-fi
+setopt PROMPT_SUBST
+PS1='%F{green}%n@%m%f: %F{cyan}%~%f%F{red}$(__git_ps1 " (%s)")%f$ '
 
 # direnv
 if type direnv &>/dev/null; then
